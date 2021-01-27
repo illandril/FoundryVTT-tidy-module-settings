@@ -1,7 +1,7 @@
 {
     "name": "illandril-tidy-module-settings",
     "title": "Illandril's Tidy Module Settings",
-    "description": "Adds support for Third Caster subclasses that use Pact Magic.",
+    "description": "Adjusts the Module Settings to be a little more usable by making each module's settings group collapsible, and giving a little more room for settings labels.",
     "version": "1.0.0",
     "library": "false",
     "manifestPlusVersion": "1.0.0",
