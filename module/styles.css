@@ -1,0 +1,17 @@
+#client-settings form .form-group > label {
+  flex: 3;
+}
+
+#client-settings .tab[data-tab='modules'] .module-header::before {
+  content: '⊟';
+  cursor: pointer;
+  padding-right: 4px;
+}
+
+#client-settings .tab[data-tab='modules'] .module-header.illandril-settings--collapse::before {
+  content: '⊞';
+}
+
+.illandril-settings--collapse + .illandril-settings--group {
+  display: none;
+}
