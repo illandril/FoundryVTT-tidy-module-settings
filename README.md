@@ -6,8 +6,6 @@ Note: This module is not compatible with the *Tidy UI - Game Settings* module. *
 
 ![Collapsible Module Settings for a variety of Illandril's modules](https://github.com/illandril/FoundryVTT-tidy-module-settings/raw/main/screenshots/example-a.png)
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/O5O73HF15)
-
 # Installation
 1. Open the Configuration and Setup for your FoundryVTT server
 1. Open the Add-on Modules Tab
