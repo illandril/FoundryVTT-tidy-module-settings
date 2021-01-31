@@ -7,6 +7,12 @@ Hooks.on('renderSettingsConfig', (app, html, options) => {
   const coreTabNav = app.form.querySelector('.tabs > .item[data-tab="core"]');
   const modulesTabNav = app.form.querySelector('.tabs > .item[data-tab="modules"]');
   const modulesTab = app.form.querySelector('.tab[data-tab="modules"]');
+
+  const resetSettingsWindowSize = () => {
+    coreTabNav.click();
+    modulesTabNav.click();
+  };
+
   const settingsList = modulesTab.querySelector('.settings-list');
   let settingsGroup = null;
   const children = Array.prototype.slice.call(settingsList.children);
@@ -20,8 +26,7 @@ Hooks.on('renderSettingsConfig', (app, html, options) => {
           } else {
             child.classList.add(CSS_COLLAPSE);
           }
-          coreTabNav.click();
-          modulesTabNav.click();
+          resetSettingsWindowSize();
         },
         false
       );
@@ -33,4 +38,7 @@ Hooks.on('renderSettingsConfig', (app, html, options) => {
       settingsGroup.appendChild(child);
     }
   });
+  if(modulesTabNav.classList.contains('active')) {
+    resetSettingsWindowSize();
+  }
 });
