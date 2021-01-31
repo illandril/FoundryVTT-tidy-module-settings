@@ -15,3 +15,11 @@
 .illandril-settings--collapse + .illandril-settings--group {
   display: none;
 }
+
+#client-settings .tab[data-tab='modules'] .illandril-settings--group + .module-header {
+  margin-top: 0.5em;
+}
+
+.illandril-settings--group .form-group:not(:last-child) {
+  margin-bottom: 0.5em;
+}
