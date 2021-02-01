@@ -9,8 +9,7 @@ Hooks.on('renderSettingsConfig', (app, html, options) => {
   const modulesTab = app.form.querySelector('.tab[data-tab="modules"]');
 
   const resetSettingsWindowSize = () => {
-    coreTabNav.click();
-    modulesTabNav.click();
+    app.setPosition({height: "auto"});
   };
 
   const settingsList = modulesTab.querySelector('.settings-list');
