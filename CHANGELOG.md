@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.0.1](https://github.com/illandril/FoundryVTT-tidy-module-settings/tree/v1.0.1) (2021-02-01)
+
+[Full Changelog](https://github.com/illandril/FoundryVTT-tidy-module-settings/compare/v1.0.0...v1.0.1)
+
 ## [v1.0.0](https://github.com/illandril/FoundryVTT-tidy-module-settings/tree/v1.0.0) (2021-01-27)
 
 [Full Changelog](https://github.com/illandril/FoundryVTT-tidy-module-settings/compare/c36fce32ad09152e2c44772bd78e0cebd5efad17...v1.0.0)
