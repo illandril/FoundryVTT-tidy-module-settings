@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.0.2](https://github.com/illandril/FoundryVTT-tidy-module-settings/tree/v1.0.2) (2021-02-18)
+
+[Full Changelog](https://github.com/illandril/FoundryVTT-tidy-module-settings/compare/v1.0.1...v1.0.2)
+
+**Enhancements**
+
+- Add support for Bug Reporter [\#1](https://github.com/illandril/FoundryVTT-tidy-module-settings/issues/1)
+
 ## [v1.0.1](https://github.com/illandril/FoundryVTT-tidy-module-settings/tree/v1.0.1) (2021-02-01)
 
 [Full Changelog](https://github.com/illandril/FoundryVTT-tidy-module-settings/compare/v1.0.0...v1.0.1)
