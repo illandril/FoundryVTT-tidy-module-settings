@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.0.3](https://github.com/illandril/FoundryVTT-tidy-module-settings/tree/v1.0.3) (2021-05-29)
+
+[Full Changelog](https://github.com/illandril/FoundryVTT-tidy-module-settings/compare/v1.0.2...v1.0.3)
+
+**Other&nbsp;Changes**
+
+- Support Foundry 0.8.x [\#2](https://github.com/illandril/FoundryVTT-tidy-module-settings/issues/2)
+
 ## [v1.0.2](https://github.com/illandril/FoundryVTT-tidy-module-settings/tree/v1.0.2) (2021-02-18)
 
 [Full Changelog](https://github.com/illandril/FoundryVTT-tidy-module-settings/compare/v1.0.1...v1.0.2)
