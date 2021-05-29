@@ -4,16 +4,18 @@
     "description": "Adjusts the Module Settings to be a little more usable by making each module's settings group collapsible, and giving a little more room for settings labels.",
     "version": "1.0.2",
     "library": "false",
-    "manifestPlusVersion": "1.0.0",
+    "manifestPlusVersion": "1.2.0",
     "minimumCoreVersion": "0.7.9",
-    "compatibleCoreVersion": "0.7.9",
+    "compatibleCoreVersion": "0.8.5",
     "type": "module",
+    "author": "Joe Spandrusyszyn (illandril)",
     "authors": [
         {
             "name": "Joe Spandrusyszyn (illandril)",
             "url": "https://github.com/illandril",
             "email": "foundry-modules@illandril.net",
             "discord": "joespan#3152",
+            "ko-fi": "illandril",
             "patreon": "illandril",
             "reddit": "u/illandril"
         }
