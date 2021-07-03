@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.0.5](https://github.com/illandril/FoundryVTT-tidy-module-settings/tree/v1.0.5) (2021-07-03)
+
+[Full Changelog](https://github.com/illandril/FoundryVTT-tidy-module-settings/compare/v1.0.4...v1.0.5)
+
+**Other&nbsp;Changes**
+
+- Module settings jump back to the top when opening a category [\#3](https://github.com/illandril/FoundryVTT-tidy-module-settings/issues/3)
+
 ## [v1.0.4](https://github.com/illandril/FoundryVTT-tidy-module-settings/tree/v1.0.4) (2021-06-18)
 
 [Full Changelog](https://github.com/illandril/FoundryVTT-tidy-module-settings/compare/v1.0.3...v1.0.4)
