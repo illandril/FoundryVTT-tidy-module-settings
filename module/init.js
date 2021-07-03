@@ -9,7 +9,13 @@ Hooks.on('renderSettingsConfig', (app, html, options) => {
   const modulesTab = app.form.querySelector('.tab[data-tab="modules"]');
 
   const resetSettingsWindowSize = () => {
+    // We shouldn't need to lookup and reset the scrollTop... and don't in the standard foundry,
+    // but the CSS applied by some skins (including Ernie's Modern UI) causes some browsers to
+    // forget where the settings dialog was scrolled to when the height is recalculated.
+    const scrollRegion = app.form.querySelector('#config-tabs');
+    const initialScrollTop = scrollRegion.scrollTop;
     app.setPosition({height: "auto"});
+    scrollRegion.scrollTop = initialScrollTop;
   };
 
   const settingsList = modulesTab.querySelector('.settings-list');
