@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.0.6](https://github.com/illandril/FoundryVTT-tidy-module-settings/tree/v1.0.6) (2021-07-18)
+
+[Full Changelog](https://github.com/illandril/FoundryVTT-tidy-module-settings/compare/v1.0.5...v1.0.6)
+
+**Other&nbsp;Changes**
+
+- Cannot collapse settings [\#4](https://github.com/illandril/FoundryVTT-tidy-module-settings/issues/4)
+
 ## [v1.0.5](https://github.com/illandril/FoundryVTT-tidy-module-settings/tree/v1.0.5) (2021-07-03)
 
 [Full Changelog](https://github.com/illandril/FoundryVTT-tidy-module-settings/compare/v1.0.4...v1.0.5)
