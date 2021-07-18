@@ -12,14 +12,14 @@
   content: '⊞';
 }
 
-.illandril-settings--collapse + .illandril-settings--group {
-  display: none;
+.illandril-settings--hidden {
+  display: none !important;
 }
 
-#client-settings .tab[data-tab='modules'] .illandril-settings--group + .module-header {
+#client-settings .tab[data-tab='modules'] .module-header:not(:first-child) {
   margin-top: 0.5em;
 }
 
-.illandril-settings--group .form-group:not(:last-child) {
+#client-settings .tab[data-tab='modules'] .form-group:not(:last-child) {
   margin-bottom: 0.5em;
 }

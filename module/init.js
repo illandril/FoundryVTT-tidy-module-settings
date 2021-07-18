@@ -1,7 +1,28 @@
 const CSS_COLLAPSE = 'illandril-settings--collapse';
+const CSS_HIDDEN = 'illandril-settings--hidden';
 const CSS_SETTINGS_GROUP = 'illandril-settings--group';
 
 const CSS_MODULE_HEADER = 'module-header';
+
+const expandCollapseGroup = (header, optForceSame) => {
+  const wasCollapsed = header.classList.contains(CSS_COLLAPSE);
+  const expand = optForceSame ? !wasCollapsed : wasCollapsed;
+  if (expand) {
+    header.classList.remove(CSS_COLLAPSE);
+  } else {
+    header.classList.add(CSS_COLLAPSE);
+  }
+
+  let sibling = header.nextElementSibling;
+  while (sibling && !sibling.classList.contains(CSS_MODULE_HEADER)) {
+    if (expand) {
+      sibling.classList.remove(CSS_HIDDEN);
+    } else {
+      sibling.classList.add(CSS_HIDDEN);
+    }
+    sibling = sibling.nextElementSibling;
+  }
+};
 
 Hooks.on('renderSettingsConfig', (app, html, options) => {
   const coreTabNav = app.form.querySelector('.tabs > .item[data-tab="core"]');
@@ -14,36 +35,34 @@ Hooks.on('renderSettingsConfig', (app, html, options) => {
     // forget where the settings dialog was scrolled to when the height is recalculated.
     const scrollRegion = app.form.querySelector('#config-tabs');
     const initialScrollTop = scrollRegion.scrollTop;
-    app.setPosition({height: "auto"});
+    app.setPosition({ height: 'auto' });
     scrollRegion.scrollTop = initialScrollTop;
   };
 
   const settingsList = modulesTab.querySelector('.settings-list');
-  let settingsGroup = null;
-  const children = Array.prototype.slice.call(settingsList.children);
-  children.forEach((child) => {
-    if (child.classList.contains(CSS_MODULE_HEADER)) {
-      child.addEventListener(
-        'click',
-        () => {
-          if (child.classList.contains(CSS_COLLAPSE)) {
-            child.classList.remove(CSS_COLLAPSE);
-          } else {
-            child.classList.add(CSS_COLLAPSE);
-          }
-          resetSettingsWindowSize();
-        },
-        false
-      );
-      child.classList.add(CSS_COLLAPSE);
-      settingsGroup = document.createElement('div');
-      settingsGroup.classList.add(CSS_SETTINGS_GROUP);
-      child.parentNode.insertBefore(settingsGroup, child.nextSibling);
-    } else if (settingsGroup !== null && settingsGroup !== child) {
-      settingsGroup.appendChild(child);
-    }
-  });
-  if(modulesTabNav.classList.contains('active')) {
+
+  const headers = settingsList.querySelectorAll(`.${CSS_MODULE_HEADER}`);
+  for (const header of headers) {
+    header.addEventListener(
+      'click',
+      () => {
+        expandCollapseGroup(header);
+        resetSettingsWindowSize();
+      },
+      false
+    );
+    expandCollapseGroup(header);
+  }
+  if (modulesTabNav.classList.contains('active')) {
     resetSettingsWindowSize();
   }
+
+  // Some other modules (SocketSettings) do funky things and add to the Settings list at unpredictable times
+  const observer = new MutationObserver(() => {
+    const headers = settingsList.querySelectorAll(`.${CSS_MODULE_HEADER}`);
+    for (const header of headers) {
+      expandCollapseGroup(header, true /* forceSame */);
+    }
+  });
+  observer.observe(settingsList, { childList: true });
 });
