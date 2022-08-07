@@ -2,12 +2,12 @@
     "id": "illandril-tidy-module-settings",
     "title": "Illandril's Tidy Module Settings",
     "description": "Adjusts the Module Settings to be a little more usable by making each module's settings group collapsible, and giving a little more room for settings labels.",
-    "version": "1.0.7",
+    "version": "2.0.0",
     "library": "false",
     "manifestPlusVersion": "1.2.0",
     "compatibility": {
-      "minimum": 10,
-      "verified": 10
+        "minimum": 10,
+        "verified": 10
     },
     "type": "module",
     "authors": [
@@ -37,7 +37,7 @@
     },
     "changelog": "https://github.com/illandril/FoundryVTT-tidy-module-settings/blob/main/CHANGELOG.md",
     "manifest": "https://github.com/illandril/FoundryVTT-tidy-module-settings/releases/latest/download/module.json",
-    "download": "https://github.com/illandril/FoundryVTT-tidy-module-settings/releases/download/v1.0.7/module.zip",
+    "download": "https://github.com/illandril/FoundryVTT-tidy-module-settings/releases/download/v2.0.0/module.zip",
     "media": [
         {
             "type": "screenshot",
