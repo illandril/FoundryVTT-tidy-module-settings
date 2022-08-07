@@ -1,14 +1,15 @@
 {
-    "name": "illandril-tidy-module-settings",
+    "id": "illandril-tidy-module-settings",
     "title": "Illandril's Tidy Module Settings",
     "description": "Adjusts the Module Settings to be a little more usable by making each module's settings group collapsible, and giving a little more room for settings labels.",
     "version": "1.0.7",
     "library": "false",
     "manifestPlusVersion": "1.2.0",
-    "minimumCoreVersion": "0.7.9",
-    "compatibleCoreVersion": "9",
+    "compatibility": {
+      "minimum": 10,
+      "verified": 10
+    },
     "type": "module",
-    "author": "Joe Spandrusyszyn (illandril)",
     "authors": [
         {
             "name": "Joe Spandrusyszyn (illandril)",
@@ -18,13 +19,6 @@
             "ko-fi": "illandril",
             "patreon": "illandril",
             "reddit": "u/illandril"
-        }
-    ],
-    "dependencies": [],
-    "conflicts": [
-        {
-            "name": "tidy-ui_game-settings",
-            "type": "module"
         }
     ],
     "esmodules": [
