@@ -1,3 +1,5 @@
+***This module is deprecated. Enhancements made to FoundryVTT in version 10 make this module useless.***
+
 # Illandril's Tidy Module Settings
 ![Latest Release Download Count](https://img.shields.io/github/downloads/illandril/FoundryVTT-tidy-module-settings/latest/module.zip?color=4b0000&label=Downloads)
 ![Forge Installs](https://img.shields.io/badge/dynamic/json?color=4b0000&label=Forge%20Installs&query=package.installs&url=http%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2Fillandril-tidy-module-settings&suffix=%25)
